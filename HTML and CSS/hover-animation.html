@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>CSS Hover Element - Selector OR Child Combinator</title>
+		<style type="text/css">
+			#MainUL li ul li{border: 1px solid #d0d0d0;display:none;}
+			#MainUL li:hover ul li{display:block;}
+			#MainUL li:hover ul li ul li{display:none;}
+			#MainUL li ul li:hover ul li{display:block;}
+			#MainUL li ul li:hover ul li ul li{display:none;}
+			#MainUL li ul li ul li:hover ul li{display:block;}
+		</style>
+		
+	</head>
+	<body>
+		
+		<ul id="MainUL">
+			<li style="color:rgb(0, 255, 132)">Google
+				<ul>
+					<li style="color:rgb(112, 255, 188)">Gmail
+						<ul>
+							<li style="color:rgb(106, 215, 255)">Sign Up
+								<ul>
+								<li style="color:rgb(80, 207, 207)"> me kyu karu </li>
+								</ul> </li>
+							<li style="color:rgb(156, 186, 246)">Sign In
+								<ul>
+									<li style="color:rgb(10, 147, 147)">Sign In As Admin</li>
+									<li style="color:rgb(227, 245, 108)">Sign In As Member</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li style="color:rgb(167, 84, 184)">Youtube</li>
+					<li style="color:rgb(217, 155, 233)">GDrive</li>
+					<li style="color:rgb(245, 89, 89)">GMap</li>
+				</ul>
+			</li>
+			<li style="color:rgb(231, 71, 185)">Facebook</li>
+			<li style="color:aqua">Microsoft
+				<ul>
+					<li style="color:rgb(0, 0, 0)"> Bing</li>
+					<li style="color:rgb(171, 255, 255)">Linked In</li>
+				</ul>
+			</li>
+			<li style="color:rgb(154, 255, 136)">MSN</li>
+			<li style="color:rgb(239, 109, 179)">Amazon
+				<ul>
+					<li style="color:rgb(8, 148, 76)">AWS</li>
+					<li style="color:rgb(75, 28, 168)">Ecommerce</li>
+					<li style="color:rgb(57, 44, 36)">A-ML</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

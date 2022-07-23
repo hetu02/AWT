@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex-wrap-row</title>
+
+    <style type="text/css">
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: verdana;
+      }
+
+      .main-container {
+        border: 10px solid #fcc1ff;
+        display: flex; /* block level flex container */
+        flex-direction: column;
+        height: 500px;
+        /* flex-wrap: nowrap; */ /* default is row nowrap */
+        /*flex-wrap: wrap;*/ /* wraps overflow items to bottom/next row */
+        flex-wrap: wrap; /* wraps overflow items to top row */
+      }
+
+      .item {
+        color: #ffffff;
+        font-size: 1rem;
+        padding: 0.75rem;
+        text-align: center;
+      }
+
+      .item-1 {
+        background-color:#DDA0DD;
+        text-shadow:3px 3px 3px yellow;
+        box-shadow:0px 0px 30px Blue;
+        
+      }
+
+      .item-2 {
+        background-color:#BF94E4;
+        border: 3px solid black;
+      }
+
+      .item-3 {
+        background-color:#f0f0f0;
+        visibility: hidden;
+      
+        /* flex-grow: 1;
+        flex-shrink: 0; */
+        /* text-shadow:3px 3px 3px blue; */
+        box-shadow:0px 0px 30px rgb(208, 255, 0);
+        
+      }
+
+      .item-4 {
+        background-color:#FBAED2;
+        border:3px solid  black;
+        box-shadow:0px 0px 30px rgb(208, 255, 0);
+        
+      }
+
+      .item-5 {
+        background-color:#EE82EE;
+        text-shadow:3px 3px 3px blanchedalmond;
+        box-shadow:0px 0px 30px rgb(208, 255, 0);
+      }
+      
+      .item-6 {
+        background-color:#ADE4CA;
+        border:3px solid  black;
+        box-shadow:0px 0px 30px rgb(208, 255, 0);
+        
+      }
+
+      .item-7 {
+        background-color:#A6D5AE;
+        text-shadow:3px 3px 3px rosybrown;
+      }
+
+      .item-8 {
+        background-color:#8FBC8E;
+        border: 3px solid black;
+        box-shadow:0px 0px 30px rgb(208, 255, 0);
+      }
+
+      .item-9 {
+        background-color: #64A466;
+        text-shadow:3px 3px 3px royalblue;
+        box-shadow:0px 0px 30px rgb(208, 255, 0);
+      }
+      
+      .item-10 {
+        background-color:#2E8B56;
+        border:3px solid  black;
+        box-shadow:0px 0px 30px rgb(208, 255, 0);
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="main-container">
+      <div class="item item-1">item-1</div>
+      <div class="item item-2">item-2</div>
+      <div class="item item-3">item-3</div>
+      <div class="item item-4">item-4</div>
+      <div class="item item-5">item-5</div>
+      <div class="item item-6">item-6</div>
+      <div class="item item-7">item-7</div>
+      <div class="item item-8">item-8</div>
+      <div class="item item-9">item-9</div>
+      <div class="item item-10">item-10</div>
+      <div class="item item-1">item-1</div>
+      <div class="item item-2">item-2</div>
+      <div class="item item-3">item-3</div>
+      <div class="item item-4">item-4</div>
+      <div class="item item-5">item-5</div>
+      <div class="item item-6">item-6</div>
+      <div class="item item-7">item-7</div>
+      <div class="item item-8">item-8</div>
+      <div class="item item-9">item-9</div>
+      <div class="item item-10">item-10</div>
+      <div class="item item-5">item-5</div>
+      <div class="item item-6">item-6</div>
+      <div class="item item-7">item-7</div>
+      <div class="item item-8">item-8</div>
+      <div class="item item-9">item-9</div>
+      <div class="item item-10">item-10</div>
+    </div>
+    
+  </body>
+  
+</html>
